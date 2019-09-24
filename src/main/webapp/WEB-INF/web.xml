@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <servlet>
+        <servlet-name>translation</servlet-name>
+        <servlet-class>com.codegym.TranslationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>result</servlet-name>
+        <servlet-class>com.codegym.TranslationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>translation</servlet-name>
+        <url-pattern>/display</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>result</servlet-name>
+        <url-pattern>/translate</url-pattern>
+    </servlet-mapping>
+</web-app>
